@@ -77,8 +77,11 @@ section span, .country, .age {
 
 .bg-top {
     position: absolute;
-    left: -100px;
-    top: -450px
+    animation-delay: 2.0s;
+    animation-duration: 3.0s;
+    animation-name: topinout;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .bg-bottom {
@@ -86,5 +89,35 @@ section span, .country, .age {
     right: -100px;
     bottom: -500px;
     box-sizing: content-box;
+    animation-delay: 2.0s;
+    animation-duration: 3.0s;
+    animation-name: bottominout;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
 }
 
+
+@keyframes topinout {
+    from {
+        left: -100px;
+        top: -450px;
+    }
+
+    to {
+        left: -100px;
+        top: -350px;
+    }
+}
+
+@keyframes bottominout {
+    from {
+        right: -100px;
+        bottom: -500px;
+    }
+
+    to {
+        right: -100px;
+        bottom: -400px;
+    }
+}
