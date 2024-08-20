@@ -23,8 +23,7 @@ body {
 }
 .card {
     background-color: white;
-    width: 400px;
-    height: 450px;
+    width: 300px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -39,19 +38,23 @@ body {
 address {
     font-style: normal;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
+.country {
+    margin-top: -10px;
+    font-size: 0.8rem;
+}
 header {
     position: relative;
 }
 .img-profile {
-    width: 100px;
+    width: 80px;
     border-radius: 80px;
-    border: 6px solid white;
+    border: 5px solid white;
     position: absolute;
-    margin-left: -250px;
-    bottom: -50px;
+    margin-left: -195px;
+    bottom: -40px;
 }
 
 .statistic {
@@ -60,9 +63,7 @@ header {
     display: flex;
     /* background-color: antiquewhite; */
     justify-content: space-around;
-    padding: 10px 30px;
-    position:relative;
-    bottom: 0px;
+    padding-bottom: 20px;
 }
 
 section {
@@ -70,11 +71,23 @@ section {
     flex-direction: column;
     align-items: center;
 }
+section span {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
 
 section span, .country, .age {
     color: var(--dark-gray)
 }
 
+.bg-bottom, .bg-top {
+    width: 750px;
+}
 .bg-top {
     position: absolute;
     animation-delay: 2.0s;
@@ -97,6 +110,10 @@ section span, .country, .age {
     
 }
 
+p:nth-child(1) {
+    font-weight: 800;
+    font-size: 1.1rem;
+}
 
 @keyframes topinout {
     from {
